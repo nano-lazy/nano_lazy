@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  </head>
+
+  <body>
+    <canvas id="myChart"></canvas>
+    <script>
+        const ctx = document.getElementById('myChart').getContext('2d');
+        const chart = new Chart(ctx, {
+            // The type of chart we want to create
+            type: 'line',
+    
+            // The data for our dataset
+            data: {
+                labels: ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September'],
+                datasets: [{
+                    label: 'My First dataset',
+                    backgroundColor: 'rgb(225, 99, 132)',
+                    borderColor: 'rgb(255, 99, 132)',
+                    data: [0, 1, 1, 2, 3, 5, 8, 13, 20]
+                }]
+            },
+    
+            // Configuration options go here
+            options: {}
+        });
+        const myLineChart = new Chart(ctx, {
+            type: 'line',
+            data: data,
+            options: options
+        });
+        </script>
+  </body>
+</html>
