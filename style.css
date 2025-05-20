@@ -1,12 +1,12 @@
  h1{
         color: red;
-      background-color: black;
+      background-color: rgb(245, 196, 196);
       text-align:center;
-      margin-top: 0%;
+      margin-top: 5%;
       }
-      .soccer{
-        color: #0000ff;
+      .line1{
+        color: black;
       }
       #midashi3{
-        color: #00ff00;
+        color: black;
       }
